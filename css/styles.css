@@ -147,6 +147,15 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/fon.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1600px;
 }
 
 .hero-title {
@@ -198,6 +207,19 @@ img {
 }
 .advantage-list .advantage-item:nth-child(4) {
   margin-right: 0;
+}
+.advantage-item-container {
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  height: 120px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.advantage-item-icon {
+  fill: currentColor;
+  display: block;
 }
 .section-title {
   font-weight: 700;
@@ -264,6 +286,9 @@ img {
 
 .container-card {
   padding: 30px 20px 30px 20px;
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
+    0px 2px 1px rgb(0 0 0 / 20%);
+  border-radius: 0px 0px 4px 4px;
   text-align: center;
 }
 
@@ -278,7 +303,36 @@ img {
 .position {
   font-size: 16px;
   line-height: 1.19;
+  margin-bottom: 16px;
 }
+.card-icon-list {
+  display: flex;
+  justify-content: center;
+}
+
+.card-icon-link {
+  width: 44px;
+  height: 44px;
+  background-color: var(--secondary-text-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #afb1b8;
+}
+.card-icon-link-logo {
+  fill: currentColor;
+}
+.card-icon-link:hover,
+.card-icon-link:focus {
+  background-color: var(--accent-color);
+  color: var(--secondary-text-color);
+}
+
+/*.card-icon-link.card-icon-link-logo:hover,
+.card-icon-link.card-icon-link-logo:focus {
+  fill: var(--secondary-text-color);
+}*/
 
 /*---------portfolio-section------------*/
 .portfolio {
