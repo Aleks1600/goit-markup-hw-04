@@ -328,11 +328,41 @@ img {
   background-color: var(--accent-color);
   color: var(--secondary-text-color);
 }
-
-/*.card-icon-link.card-icon-link-logo:hover,
-.card-icon-link.card-icon-link-logo:focus {
-  fill: var(--secondary-text-color);
-}*/
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: 50px;
+}
+.clients-item {
+  flex-basis: calc((100% - 180px) / 6);
+  margin-left: 30px;
+  width: 170px;
+  height: 92px;
+}
+.clients-link {
+  background-color: var(--secondary-text-color);
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #afb1b8;
+}
+.clients-link-logo {
+  fill: currentColor;
+}
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
 
 /*---------portfolio-section------------*/
 .portfolio {
