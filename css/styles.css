@@ -144,8 +144,8 @@ img {
   margin-right: 10px;
 }
 
-.header-contacts-item:hover,
-.header-contacts-item:focus {
+.header-contacts.link:hover,
+.header-contacts.link:focus {
   color: var(--accent-color);
 }
 
