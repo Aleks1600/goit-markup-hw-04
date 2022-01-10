@@ -138,6 +138,8 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: currentColor;
+  display: flex;
+  align-items: center;
 }
 .header-icon-link {
   fill: currentColor;
@@ -154,6 +156,8 @@ img {
   background-color: var(--hero-footer-dg-color);
   padding-top: 200px;
   padding-bottom: 200px;
+  margin-right: auto;
+  margin-left: auto;
   text-align: center;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
@@ -217,18 +221,15 @@ img {
   margin-right: 0;
 }
 .advantage-item-container {
+  display: flex;
   background-color: #f5f4fa;
   border-radius: 4px;
   height: 120px;
-  padding: 25px 100px;
   margin-bottom: 30px;
   justify-content: center;
   align-items: center;
 }
-.advantage-item-icon {
-  fill: currentColor;
-  display: block;
-}
+
 .section-title {
   font-weight: 700;
   font-size: 36px;
@@ -346,11 +347,13 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.clients-title {
+  margin-bottom: 50px;
+}
 .clients-list {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
-  margin-top: 50px;
 }
 .clients-item {
   flex-basis: calc((100% - 180px) / 6);
@@ -360,8 +363,8 @@ img {
 }
 .clients-link {
   background-color: var(--secondary-text-color);
-  width: 170px;
-  height: 92px;
+  width: 100%;
+  height: 100%;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   display: flex;
@@ -452,8 +455,11 @@ img {
   line-height: 1.87;
   color: var(--primery-text-color);
 }
-.card-item:hover,
-.card-item:focus {
+.card-link {
+  display: block;
+}
+.card-link:hover,
+.card-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
